@@ -1,0 +1,94 @@
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+html {
+    background-color: rgb(131, 131, 131);
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    background-color: blue;
+    margin: 0px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.input-bar {
+    justify-content:left;
+    padding-right: 80%;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+.saved-places {
+    justify-content: left;
+    padding-right: 80%;
+    margin-left: 15px;
+}
+
+.five-day{
+    justify-content: right;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+
+}
+
+.card {
+    margin: 10px;
+    
+}
+
+.current-weather {
+    padding: 50px;
+    justify-content: top;
+    justify-content: right;
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.big-card {
+    background-color: darkgray;
+    padding: 50px;
+    padding-right: 600px;
+    position: relative;
+    top: -100px;
+    left: -200px;
+    border-style: solid;
+    stroke: black;
+    border-radius: 25px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.day-card {
+    background-color: darkgray;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    position: relative;
+    top: -100px;
+    left: -50px;
+    border-style: solid;
+    stroke: black;
+    border-radius: 25px;
+    margin-right: -5px;
+}
+
+.icon {
+    max-width: 40%;
+    height: auto;
+}
