@@ -18,7 +18,7 @@ function getName(event) {
     event.preventDefault();
     let searchName = document.querySelector('.generate').value || event.target.innerHTML;
     document.getElementById("generate").value = "";
-    let requestUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${searchName}&units=imperial&appid=3b3fd69f669a54cc39cd87683fb4d331`
+    let requestUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${searchName}&units=imperial&appid=3b3fd69f669a54cc39cd87683fb4d331`
     getAPI(requestUrl)
     saveCity(searchName)
 }
