@@ -16,9 +16,9 @@ function init() {
 //gets name on search click
 function getName(event) {
     event.preventDefault();
-    let searchName = document.querySelector('.generate').value;
+    let searchName = document.querySelector('.generate').value || event.target.innerHTML;
     document.getElementById("generate").value = "";
-    let requestUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${searchName}&units=imperial&appid=3b3fd69f669a54cc39cd87683fb4d331`
+    let requestUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${searchName}&units=imperial&appid=3b3fd69f669a54cc39cd87683fb4d331`
     getAPI(requestUrl)
     saveCity(searchName)
 }
@@ -187,5 +187,5 @@ function populateCities(cities) {
     })
 }
 generateBtn.addEventListener('click', getName);
-cityBtns.addEventListener('click', () => getName);
+cityBtns.addEventListener('click', getName);
 init();
